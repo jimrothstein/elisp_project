@@ -1,0 +1,11 @@
+(+ 4 5)
+
+;; function
+(defun add-nums (+ a b) )
+(add-nums 2 3)
+
+;; load, import library
+(require 'ert)
+
+;; return logical
+(equal 5 5)
