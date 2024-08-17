@@ -1,3 +1,5 @@
+;; To run:   M-x ielm RET
+
 (+ 4 5)
 
 ;; function
@@ -9,3 +11,7 @@
 
 ;; return logical
 (equal 5 5)
+
+
+;; set-register to open  a file
+(set-register ?i (cons 'file "~/code/elisp_project/second"))
