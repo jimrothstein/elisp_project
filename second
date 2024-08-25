@@ -1,4 +1,6 @@
 ;; To run:   M-x ielm RET
+;; To run buffer:   M-x eval-buffer
+;; To run ONE line;   M-x eval-region
 
 (+ 4 5)
 
@@ -15,3 +17,18 @@
 
 ;; set-register to open  a file
 (set-register ?i (cons 'file "~/code/elisp_project/second"))
+
+(set-register ?z (cons 'file "~/code/elisp_project/second"))
+
+(let ((z "A")
+(t "B")
+(message "item %s" z)
+;; (message "Item %s and %s" z t)
+)
+)
+
+
+;; Create local variable
+(defvar jim_var nil "Your documentation here.")
+
+(set (make-local-variable 'jim_var) <the-value>)
