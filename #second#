@@ -3,17 +3,17 @@
 ;; To run ONE line;   M-x eval-region
 ;; Position AFTER code; C-x C-e evaluates
 
-(+ 4 5)
+(+ 4 5) 
 
 ;; function
-(defun add-nums (+ a b) )
-(add-nums 2 3)
+(defun add-nums (+ a b) ) 
+(add-nums 2 3) 
 
 ;; load, import library
 (require 'ert)
 
 ;; return logical
-(equal 5 5)
+(equal 5 5) 
 
 
 ;; set-register to open  a file
@@ -36,3 +36,4 @@
 
 ;;  position AFTER )   C-x C-e
 (buffer-file-name)
+(buffer-name)
