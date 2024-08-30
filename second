@@ -5,6 +5,9 @@
 
 (+ 4 5)
 
+emacs-version
+buffer-file-name
+
 ;; function
 (defun add-nums (+ a b) )
 (add-nums 2 3)
@@ -14,6 +17,14 @@
 
 ;; return logical
 (equal 5 5)
+
+;; if-then
+(if (< 0 4) "yes" "no")
+
+;; predicate; no space before p
+(numberp 1.1)
+
+(number p "a")
 
 
 ;; set-register to open  a file
@@ -36,3 +47,24 @@
 
 ;;  position AFTER )   C-x C-e
 (buffer-file-name)
+
+;; evaluates to itsef
+'(5 6 "A")
+
+;; 
+?A
+
+;; 10	
+?\n
+
+?C-c
+
+;; ^c
+(kbd "C-c")
+
+
+;; list, self-evaluates to itself?
+;; but a macro, would evaluate (??)
+[1 2 (+ 1 2)]
+[+ 2 (+ 1 2)]
+(+ 2 (+ 1 2))
