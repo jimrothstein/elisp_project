@@ -1,7 +1,8 @@
 ;; To run:   M-x ielm RET
 ;; To run buffer:   M-x eval-buffer
 ;; To run ONE line;   M-x eval-region
-;; Position AFTER code; C-x C-e evaluates
+
+;; **Position AFTER code; C-x C-e evaluates**
 
 (+ 4 5)
 
@@ -27,9 +28,12 @@ buffer-file-name
 (number p "a")
 
 
-;; set-register to open  a file
+;; REGISTERS
+;; set-register to open  a file (C-x C-3 AFTER code)
 (set-register ?i (cons 'file "~/code/elisp_project/second"))
 
+
+(set-register ?r (cons 'file "~/code/docs/tech_notes/310_R_notes.qmd")
 (set-register ?z (cons 'file "~/code/elisp_project/second"))
 
 (let ((z "A")
@@ -40,6 +44,7 @@ buffer-file-name
 )
 
 
+;; LOCAL VARIABLE
 ;; Create local variable
 (defvar jim_var nil "Your documentation here.")
 
