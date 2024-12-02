@@ -9,32 +9,6 @@
 emacs-version
 buffer-file-name
 
-
-;; use fill-column (width); it is a symbol and need to evaluate it
-(concat "The " (number-to-string (+ 2 fill-column)) " red foxes")
-
-;; shocking, it evaluates to itself, letter a
-(eval "a")
-
-;; remember 1st step is to evaluate arguments, even if trivial
-(concat "a" "b")
-
-;; elisp zero-based;  FROM TO (TO means up to and NOT including) 
-;; "cd"
-(substring "abcd" 2 4)
-
-;; setq takes w aruguments, here second is list 
-;; x is symbol, but in this case setq requires it be literal (??)
-;; does two things, prints (rose violet) 
-;; side effect:  symbol x points to list
-(setq x '(rose violet))
-
-;; but this is error, b/c literal (????)
-(eval x)
-
-;; return itself
-(eval 'x)  
-
 ;; function
 (defun add-nums (+ a b) )
 (add-nums 2 3)
