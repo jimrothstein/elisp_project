@@ -52,12 +52,9 @@ buffer-file-name
 (set-register ?r (cons 'file "~/code/docs/tech_notes/310_R_notes.qmd")
 (set-register ?z (cons 'file "~/code/elisp_project/second"))
 
-(let ((z "A")
-(t "B")
+(setq z "A")
 (message "item %s" z)
 ;; (message "Item %s and %s" z t)
-)
-)
 
 
 ;; LOCAL VARIABLE
