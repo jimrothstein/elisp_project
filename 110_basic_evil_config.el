@@ -9,6 +9,8 @@
 (setq evil-insert-state-cursor '((bar . 5)  "green"))
 
 
+;; list fonts
+(print (font-family-list))
 
 
 
