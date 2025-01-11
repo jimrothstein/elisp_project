@@ -4,6 +4,7 @@
 
 ;; **Position AFTER code; C-x C-e evaluates**
 
+;; exampes:  let, defun, eval, substring, concat
 (+ 4 5)
 
 emacs-version
@@ -78,14 +79,15 @@ buffer-file-name
 (set-register ?r (cons 'file "~/code/docs/tech_notes/310_R_notes.qmd")
 (set-register ?z (cons 'file "~/code/elisp_project/second"))
 
-(let ((z "A")
+;; TODO set and use a variable using `let`
+(let (z "A"))
+(let z "A")
 (t "B")
+
 (message "item %s" z)
 ;; (message "Item %s and %s" z t)
 )
 )
-
-
 ;; LOCAL VARIABLE
 ;; Create local variable
 (defvar jim_var nil "Your documentation here.")
@@ -115,3 +117,24 @@ buffer-file-name
 [1 2 (+ 1 2)]
 [+ 2 (+ 1 2)]
 (+ 2 (+ 1 2))
+
+;; defun
+;; then use C-u 5;  M-x multiply-by-seven(
+(defun multiply-by-seven (number)       ; Interactive version.
+  "Multiply NUMBER by seven."
+  (interactive "p")
+  (message "The result is %d" (* 7 number)))
+
+;; TODO:
+(defun my_name ()
+  "Returns my name."
+  (interactive "p")
+  (message "your name is jim"))
+
+;; assign variable (?) zebra value `stripes`
+(let ((zebra "stripes")
+      (tiger "fierce"))
+  (message "One kind of animal has %s and another is %s."
+           zebra tiger))
+
+

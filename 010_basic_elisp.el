@@ -10,13 +10,16 @@
 
 ;; symbols is NOT actual value or instructions,  when eval the symbol (^x^e) get the value (if string, number ...) or instructions (if function)
 emacs-version  (28.2)
-buffer-file-name
+(buffer-file-name)
+
+;; variable, set to 70
+;; ^h v fill-column<RET>
 fill-column  (70)
 
 ;; function
 (defun add-nums (+ a b) )
 (add-nums 2 3)
 
-
+;;
 
 (setq a 'x)
