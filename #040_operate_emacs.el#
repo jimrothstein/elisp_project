@@ -13,6 +13,7 @@
 
 (set-frame-parameter nil 'fullscreen 'fullheight)
 
+frame-inherited-parameters
 ;; ------------------------  version
 
 (emacs-version)
