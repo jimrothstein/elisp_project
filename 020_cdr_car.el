@@ -4,7 +4,11 @@
 
 ;; **Position AFTER code; C-x C-e evaluates**
 
+;; ------------------------  
+;; tags: setq, cons, reverse
 ;; SEE 001.53 Hoffman - just a few examples, cons, 'x, cdr
+;;------------------------  
+
 ;; ' means, do not evaluate
 (setq x '(cake cookie))
 

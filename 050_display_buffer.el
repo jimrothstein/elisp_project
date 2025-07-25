@@ -16,3 +16,13 @@
 					; if shell is already open in this window, use it;
 ; if shell is NOT open, display in current buffer
 (setq display-buffer-alist '(("\\*shell" (display-buffer-reuse-window display-buffer-same-window))))
+
+;; SEE (ESS manual) 3.5 Control buffer display
+;; https://ess.r-project.org/Manual/ess.html#Controlling-buffer-display-1
+
+
+;;  one buffer for source; ;one for inferior process
+(setq display-buffer-alist
+      '(("^\\*R"
+         (display-buffer-reuse-window display-buffer-pop-up-frame)
+         (reusable-frames . 0))))

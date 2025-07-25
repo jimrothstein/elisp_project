@@ -4,7 +4,7 @@
 
 ;; **Position AFTER code; C-x C-e evaluates**
 
-;; exampes:  let, defun, eval, substring, concat
+;; tags: let, defun, eval, substring, concat
 (+ 4 5)
 
 emacs-version
