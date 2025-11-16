@@ -10,7 +10,7 @@
 ;; symbols is NOT actual value or instructions,  when eval the symbol (^x^e) get the value (if string, number ...) or instructions (if function)
 ;; ------------------------  simple info
 
-emacs-version  ;; (28.2)
+emacs-version  ;; (30.1)
 (buffer-file-name)
 
 ;; variable, set to 70
@@ -37,3 +37,15 @@ fill-column ;; (70)
 ;;  toggle whitespace mode on/off (now in init.el)
 (require 'bind-key)
 (bind-key* "C-w" 'whitespace-mode)
+
+;; ------------------------  separate
+;; insert text at cursor point 
+;; REF http://xahlee.info/emacs/emacs/elisp_examples.html
+;; ------------------------  separate
+;; C-x C-e, to eval
+;; To use: M-x my-insert-p-tag 
+(defun my-insert-p-tag ()
+  "insert 'hi' at cursor point."
+  (interactive)
+  (insert "hi")
+  (backward-char 4))
