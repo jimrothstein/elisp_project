@@ -36,6 +36,47 @@
 
 
 
+;; Prot's book on elsip
+
+;;------------------------ symbol
+
+;; create symbol; value is "Protestsilaos"
+(defvar my-name "Protesilaos")
+
+;; print value
+     my-name
+;; same
+     (symbol-value 'my-name)
+
+;; set var and  value, get its value 
+(setq xx (list 1))
+(symbol-value 'xx)
+
+;; https://protesilaos.com/emacs/emacs-lisp-elements#h:evaluate-emacs-lisp
+;; more from Prot
+(message "Hello world, this is my message to you!")
+
+;; compare note quote
+(upcase (message "Hello world, the number is %s" (+ 1 1 1)))
+(message "I got this: %s" '(one two three)) 
+
+;;------------------------ eval in mini-buffer
+
+;; Prot:  evaluate code in mini-buffer
+;; Example: M-x eval-expression, then (buffer-file-name) RET  (returns bufer name)
+
+;; same, c-x c-e does the same:
+(buffer-file-name)
 
 
+;; ------------------------ load-path (list-like?)
+load-path
 
+;; needs '
+(symbol-value 'load-path)
+
+;; set width height
+(modify-all-frames-parameters
+ '((tool-bar-lines . 0)
+   (width . 80)
+   (height . 44)))
